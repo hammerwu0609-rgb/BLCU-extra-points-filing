@@ -1,0 +1,24 @@
+{
+  "_说明": "填表配置示例（本次 2025-2026 学年真实数据）。rows 里的 values 依次对应 value_columns 指定的列，最后一列是分值。",
+  "template": "C:/Users/xx/Desktop/xx综测附加分申报/【附加分】xx学院附加分申报表.xlsx",
+  "output": "C:/Users/xx/Desktop/xx综测附加分申报/张三附加分申报表.xlsx",
+  "sheet": "Sheet1",
+  "header": {"B3": "24xx1班", "D3": "张三", "G3": "202400000001"},
+  "header_text_format": {"G3": "@"},
+  "rows": [
+    {"row": 10, "values": ["北京语言大学校史馆讲解员", "5.5h", "校级", "个人", 0.055]},
+    {"row": 16, "values": ["北京语言大学2024-2025学年一二九评优", "先进班集体（优秀班集体）", "院级", "集体", 0.2]},
+    {"row": 17, "values": ["北京语言大学2025-2026学年五四评优", "优秀团支部", "校级", "集体", 0.4]},
+    {"row": 18, "values": ["语图爱书会（校级学生组织）", "部员", "校级", "个人", 1]},
+    {"row": 24, "values": ["北京语言大学2025年学生暑期社会实践", "社会实践参与奖", "校级", "集体", 0.4]}
+  ],
+  "value_columns": [2, 3, 4, 5, 6],
+  "empty_rows": [6, 7, 8, 11, 12, 14, 20, 21, 23, 25],
+  "subtotal_cells": ["G6", "G9", "G13", "G15", "G18", "G20", "G23", "G24", "G25"],
+  "total_cell": "B26",
+  "total_formula": "=ROUND(G6+G9+G13+G15+G18+G20+G23+G24+G25,3)",
+  "number_format": "0.000",
+  "print_area": "A1:G27",
+  "recalc_with_excel": true,
+  "pdf_out": "C:/Users/xx/Desktop/xx综测附加分申报/.workbuddy/tmp/form_check.pdf"
+}

@@ -1,0 +1,8 @@
+# 所有平台都需要：检索 + 填表 + 自检
+openpyxl>=3.1
+xlrd>=2.0          # 仅读 .xls 老格式
+pillow>=10.0
+pymupdf>=1.24      # PDF -> PNG
+
+# 仅 Windows + 已安装 Microsoft Excel 时才需要：来源截图 / Excel 重算 / 页数检查
+pywin32>=306 ; sys_platform == "win32"
